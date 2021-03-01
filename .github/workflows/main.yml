@@ -56,7 +56,7 @@ jobs:
 
   ci-deploy:
     runs-on: ubuntu-latest
-    needs: update-config-repo
+    needs: build_test_and_package
     environment:   
       name: ci1
       url: https://api.ci1.tranmere-web.com/demo-lambda/    
